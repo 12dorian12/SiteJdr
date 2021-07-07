@@ -1,0 +1,35 @@
+#backgroundTab{
+  margin: 0 auto;
+  width: 50%;
+  min-width: 500px;
+}
+#backgroundTab > div{
+  width: 100%;
+  padding-bottom: 135%;
+  position: relative;
+}
+#ficheTab{
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  padding: 10%;
+
+  background-image: url("../add/scrol_1653x2230.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#nameTab{
+  font-family: 'Kingthings Spikeless';
+  text-align: center;
+
+
+}
+
+#stateTab{
+  display: flex;
+}
+#stateName, #stateNum{
+  font-family: sans-serif;
+  padding-top: 10%; 
+  padding-left: 10%;
+}
