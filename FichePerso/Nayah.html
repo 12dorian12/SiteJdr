@@ -10,9 +10,20 @@
     <script src="js/global.js" defer></script>
   </head>
   <body>
+    <!-- on cree une fiche a ratio constant -->
     <div id="backgroundTab">
       <div><div id="ficheTab">
+
+          <!-- nom du peronage -->
           <div id="nameTab">Nayah Naïlo</div>
+
+          <!-- vie est mana du personage -->
+          <div id="lifeTab">
+            HP : <span id="lifeSpan">12 / 12</span>&nbsp &nbsp &nbsp
+            MP : <span id="manaSpan">10 / 10</span>
+          </div>
+
+          <!-- states du peronage -->
           <div id="stateTab">
             <div id="stateName">
               Force :<br>
@@ -24,16 +35,36 @@
               Perception :
             </div>
             <div id="stateNum">
-              10 <br>
-              12 <br>
-              14 <br>
-              18 <br>
-              16 <br>
-              15 <br>
-              13
+              10 <span class="stateNumPlus">(+0)</span> <br>
+              12 <span class="stateNumPlus">(+1)</span> <br>
+              14 <span class="stateNumPlus">(+2)</span> <br>
+              18 <span class="stateNumPlus">(+4)</span> <br>
+              16 <span class="stateNumPlus">(+3)</span> <br>
+              15 <span class="stateNumPlus">(+2)</span> <br>
+              13 <span class="stateNumPlus">(+1)</span>
             </div>
+            <!-- defense du peronage -->
+            <table id="defTable">
+              <tr>
+                <th>AC</th>
+                <th>B</th>
+                <th class="barre">B</th>
+              </tr>
+              <tr>
+                <th>D</th>
+                <td>11</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <th class="barre">D</th>
+                <td>10</td>
+                <td>10</td>
+              </tr>
+            </table>
           </div>
+
       </div></div>
     </div>
+
   </body>
 </html>

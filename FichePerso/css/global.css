@@ -1,7 +1,10 @@
+/*
+#################################################### gestion de l'affiche de fond a ratio constant
+*/
 #backgroundTab{
   margin: 0 auto;
-  width: 50%;
-  min-width: 500px;
+  width: 33.33%;
+  min-width: 300px;
 }
 #backgroundTab > div{
   width: 100%;
@@ -17,19 +20,69 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/*
+#################################################### nom
+*/
 #nameTab{
+  width: 50%;
+  margin: auto;
   font-family: 'Kingthings Spikeless';
   text-align: center;
-
-
+  padding-top: 12%;
+  border-bottom-style: solid;
+  border-bottom-color: #000000aa;
 }
-
+/*
+#################################################### bar de vie et de mana
+*/
+#lifeTab{
+  width: 50%;
+  margin: auto;
+  font-family: 'Kingthings Spikeless';
+  text-align: center;
+  border-top-style: solid;
+  border-top-color: #000000aa;
+}
+#lifeSpan{
+  color: red;
+}
+#manaSpan{
+  color: blue;
+}
+/*
+#################################################### ligne de states
+*/
 #stateTab{
   display: flex;
+  text-align: center;
 }
 #stateName, #stateNum{
   font-family: sans-serif;
-  padding-top: 10%; 
+  padding-top: 10%;
   padding-left: 10%;
+}
+/*
+#################################################### tableau de defense
+*/
+#defTable{
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+th{
+  /* font-family: 'Kingthings Spikeless';
+  font-weight: normal; */
+}
+td, th{
+  width: 1px;
+  border-style: solid;
+  border-width: 1px;
+  height: 33.33%;
+  width: 33.33%;
+}
+.barre{
+  background-color: black;
+  color: white;
+  border-color: black;
 }
