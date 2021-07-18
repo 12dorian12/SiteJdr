@@ -1,0 +1,38 @@
+body {
+    background-color: rgba(223, 211, 209, 0.795);
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    padding: 10%;
+  
+    background-image: url("jdr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    color : Black;
+    font-family: verdana;
+    font-size: 300%;
+    border : auto;
+}
+p {
+    color : lightgray;
+    border : 4px solid white;
+    padding: 15px;
+    background-color : rgba(116, 6, 6, 0.815);
+    border-radius : 100 px;
+   
+}
+a:link, a:visited {
+    background-color: red;
+    color : white;
+    padding: 14px 25 px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+}
+
+a:hover, a:active{
+    background-color: red;
+}

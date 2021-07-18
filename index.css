@@ -1,3 +1,6 @@
+
+
+
 body {
     background-color: rgba(223, 211, 209, 0.795);
     position: absolute;
@@ -22,10 +25,19 @@ p {
     background-color : rgba(116, 6, 6, 0.815)
 }
 
-p1 {
+p {
     color : lightgray;
     border : 4px solid white;
+    box-shadow: 8px 8px 5px #444;
     padding: 15px;
     background-color : rgba(116, 6, 6, 0.815)
 
 }
+.shadowbox {
+    width: 15em;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 10px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 1%, #ccc);
+    
+  }
