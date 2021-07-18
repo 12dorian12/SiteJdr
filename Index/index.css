@@ -11,10 +11,13 @@ body {
 
 
 h1 {
-    color : Black;
-    font-family: verdana;
+    color :black ;
+    font-family: 'Luminari';
     font-size: 300%;
     border : auto;
+    font-size: 107px;
+    font-weight: 1000;
+
 }
 p {
     color : lightgray;
@@ -25,14 +28,15 @@ p {
    
 }
 a:link, a:visited {
-    background-color: red;
+    background-color: rgb(116, 6, 6, 0.815);
+    font-size: 25px;
     color : white;
-    padding: 14px 25 px;
+    padding: 25px;
+    border: 1px solid white;
     text-align: center;
-    text-decoration: none; 
-    display: inline-block;
+    text-decoration: none;
+    display: inline-block; 
+   
 }
 
-a:hover, a:active{
-    background-color: red;
-}
+
