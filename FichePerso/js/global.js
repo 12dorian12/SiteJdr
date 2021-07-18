@@ -4,6 +4,9 @@ var stateTab = document.getElementById('stateTab');
 var stateNumPlus = document.getElementsByClassName('stateNumPlus');
 var lifeTab = document.getElementById('lifeTab');
 var defTable = document.getElementById('defTable');
+var invMaitTab = document.getElementById('invMaitTab');
+var armeTab = document.getElementById('armeTab');
+var armeScroll = document.getElementById('armeScroll');
 
 function redim(){
   //taille de notre fiche
@@ -14,6 +17,8 @@ function redim(){
   stateTab.style.fontSize = sizeTab.width/30+"px";
   lifeTab.style.fontSize = sizeTab.width/30+"px";
   defTable.style.fontSize = sizeTab.width/30+"px";
+  invMaitTab.style.fontSize = sizeTab.width/30+"px";
+  armeTab.style.fontSize = sizeTab.width/30+"px";
   for (var i = 0; i < stateNumPlus.length; i++)
   {
       stateNumPlus[i].style.fontSize = sizeTab.width/50+"px";
@@ -27,6 +32,10 @@ function redim(){
   //gestion des taille
   defTable.style.height = sizeTab.width/3.8+"px";
   defTable.style.width = sizeTab.width/3.8+"px";
+  
+
+  //autres
+  ficheTab.style.filter = "drop-shadow(0 0 "+sizeTab.width/50+"px teal)";
 }
 
 window.onresize = redim;

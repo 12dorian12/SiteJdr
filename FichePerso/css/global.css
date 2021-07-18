@@ -1,10 +1,30 @@
+ul{
+  margin: 0;
+  padding-left: 6%;
+  list-style-type: none;
+
+}
+li{
+  margin: 0;
+  background-image: url("../add/sword.svg");
+  background-size: 15%;
+  background-repeat: no-repeat;
+  padding-left: 20%;
+}
+td, th{
+  text-align: center;
+  width: 1px;
+  border: 1px solid;
+  height: 33.33%;
+  width: 33.33%;
+}
 /*
 #################################################### gestion de l'affiche de fond a ratio constant
 */
 #backgroundTab{
   margin: 0 auto;
   width: 33.33%;
-  min-width: 300px;
+  min-width: 450px;
 }
 #backgroundTab > div{
   width: 100%;
@@ -68,16 +88,6 @@
   margin-right: auto;
   margin-top: 10%;
 }
-th{
-  /* font-family: 'Kingthings Spikeless';
-  font-weight: normal; */
-}
-td, th{
-  width: 1px;
-  border: 1px solid;
-  height: 33.33%;
-  width: 33.33%;
-}
 .barre{
   background-color: black;
   color: white;
@@ -97,23 +107,104 @@ td, th{
 #invTab, #maitriseTab{
   height: 100%;
   width: 50%;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 #invTab{
   border-right: 1px solid;
+}
+
+#invHeadTab, #maitriseHeadTab{
+  height: 20%;
+  width: 100%;
+  overflow-y: hidden;
+  font-family: 'Kingthings Spikeless';
+  text-align: center;
+  border-bottom: 1px solid;
+}
+#invCoreTab, #maitriseCoreTab{
+  height: 80%;
+  width: 100%;
+  overflow-y: scroll;
+}
+#invCoreTab{
   direction: rtl;
 }
-#invTab>div, #maitriseTab>div{
+#invCoreTab > div{
   direction: ltr;
+}
+#maitriseCoreTab{
+  display: flex;
+  flex-direction: row;
+}
+#maitriseCoreTab > div{
+  width: 50%;
+  text-align: center;
+}
+.titleMait{
+  font-family: 'Kingthings Spikeless';
 }
 /*
 #################################################### arme
 */
 #armeTab{
+  position: relative;
   height: 20%;
   width: 90%;
   margin: auto;
   border: 1px solid;
   border-top: none;
+  /* arnaque pour la position fixed */
+  transform: scale(1, 1);
+}
+.amreLigne{
+  display: flex;
+  flex-direction: row;
+}
+#armeTitle{
+  /* font-weight: bold; */
+  height: 20%;
+}
+#armeBody{
+  height: 80%;
+  width: 100%;
+}
+#armeScroll{
+  position: relative;
+  height: 100%;
+  width: 100%;
   overflow-y: scroll;
+  overflow-x: hidden;
+}
+.t1, .t2, .t3, .t4, .t5, .t6{
+  position: relative;
+  width: 17%;
+  height: 20%;
+  border-right: 1px solid;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+.fixedt{
+  z-index: 2;
+  position: fixed;
+  background-color: black;
+  width: 16%;
+  height: 20%;
+  color: white;
+
+  border-right: 1px solid black;
+}
+/*
+#################################################### scrollbar
+*/
+.scrollB::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollB::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+.scrollB::-webkit-scrollbar-thumb {
+  background-color: #00000055;
+  border-radius: 20px;
+  width: 6px;
 }
