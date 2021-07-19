@@ -18,6 +18,11 @@ td, th{
   height: 33.33%;
   width: 33.33%;
 }
+body{
+  background-image: url("../add/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*
 #################################################### gestion de l'affiche de fond a ratio constant
 */
