@@ -8,7 +8,8 @@ var invMaitTab = document.getElementById('invMaitTab');
 var armeTab = document.getElementById('armeTab');
 var armeScroll = document.getElementById('armeScroll');
 
-function redim(){
+function globalResize()
+{
   //taille de notre fiche
   sizeTab = ficheTab.getBoundingClientRect();
 
@@ -32,11 +33,13 @@ function redim(){
   //gestion des taille
   defTable.style.height = sizeTab.width/3.8+"px";
   defTable.style.width = sizeTab.width/3.8+"px";
-  
+
 
   //autres
   ficheTab.style.filter = "drop-shadow(0 0 "+sizeTab.width/50+"px teal)";
+  console.log(sizeTab.width)
 }
 
-window.onresize = redim;
-redim();
+window.onresize = globalResize;
+
+demarage(globalResize)
