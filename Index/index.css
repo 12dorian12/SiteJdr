@@ -1,3 +1,4 @@
+/*
 body {
     background-color: rgba(223, 211, 209, 0.795);
     position: absolute;
@@ -5,7 +6,8 @@ body {
     padding: 10%;
   
     background-image: url("jdr.jpg");
-    background-size: cover;
+    width: 50%;
+    float: left; 
     background-repeat: no-repeat;
 }
 
@@ -38,5 +40,51 @@ a:link, a:visited {
     display: inline-block; 
    
 }
+*/
 
+#personnage {
+    background-color: white;
+    width: 50%;   
+    top: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-image: url("https://t1.uc.ltmcdn.com/fr/images/4/6/3/img_quelle_difference_entre_fantastique_et_merveilleux_13364_orig.jpg");
+    background-position: center;
+    background-size: cover;
+    color:white;
+    font-family: 'Kingthings Spikeless';
+    text-align: center;
+    font-size: 10vh;
+    z-index: -1;
+}
+
+#map {
+    background-color: black;
+    width: 50%;
+    right: 0;
+    position:absolute;
+    top: 0;
+    height: 100%;
+    background-image: url("https://i0.wp.com/gusandco.net/wp-content/uploads/2019/08/francesca-baerald-fbaerald-gw-solsystemmap-1.jpg?ssl=1&resize=715%2C715");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;    
+}
+
+#enBas {
+    color:black;
+    font-family: 'Kingthings Spikeless';
+    text-align: center;
+    font-size: 10vh;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
 
