@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>JDR</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/global.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://fonts.cdnfonts.com/css/kingthings-spikeless" rel="stylesheet">
+    <script type="text/javascript" src="../global/js/outil.js"></script>
+  </head>
+  <body>
+    <!-- on cree une fiche a ratio constant -->
+    <div id="backgroundTab">
+      <div><div id="ficheTab">
+
+          <!-- nom du peronage -->
+          <div id="nameTab">Nayah Naïlo</div>
+
+          <!-- vie est mana du personage -->
+          <div id="lifeTab">
+            HP : <span id="lifeSpan">12 / 12</span>&nbsp &nbsp &nbsp
+            MP : <span id="manaSpan">10 / 10</span>
+          </div>
+
+          <!-- states du peronage -->
+          <div id="stateTab">
+            <div id="stateName">
+              Force :<br>
+              Dextérité :<br>
+              Constitution :<br>
+              Intelligence :<br>
+              Sagesse :<br>
+              Charisme :<br>
+              Perception :
+            </div>
+            <div id="stateNum">
+              10 <span class="stateNumPlus">(+0)</span> <br>
+              12 <span class="stateNumPlus">(+1)</span> <br>
+              14 <span class="stateNumPlus">(+2)</span> <br>
+              18 <span class="stateNumPlus">(+4)</span> <br>
+              16 <span class="stateNumPlus">(+3)</span> <br>
+              15 <span class="stateNumPlus">(+2)</span> <br>
+              13 <span class="stateNumPlus">(+1)</span>
+            </div>
+            <!-- defense du peronage -->
+            <table id="defTable">
+              <tr>
+                <th>AC</th>
+                <th>B</th>
+                <th class="barre">B</th>
+              </tr>
+              <tr>
+                <th>D</th>
+                <td>11</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <th class="barre">D</th>
+                <td>10</td>
+                <td>10</td>
+              </tr>
+            </table>
+          </div>
+          <div id="invMaitTab">
+
+            <div id="invTab">
+              <div id="invHeadTab">
+                Inventaire
+              </div>
+              <div id="invCoreTab" class="scrollB">
+                <div>
+                  <ul>
+                    <li>Dague</li>
+                    <li>Bâton +1 efficacité des sorts</li>
+                    <li>Robe de voyageur</li>
+                    <li>Livre de sorts de Falan</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="maitriseTab">
+              <div id="maitriseHeadTab">
+                Maitrise
+              </div>
+              <div id="maitriseCoreTab" class="scrollB">
+                <div>
+                  <span class="titleMait">Arme</span> <br> Baguettes <br> batons <br> dagues
+                </div>
+                <div>
+                  <span class="titleMait">Armure</span> <br> tissus
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="armeTab">
+
+            <div id="armeScroll" class="scrollB">
+              <div id="armeTitle" class="amreLigne">
+                  <div class="t1"><div class="fixedt">Arme</div></div>
+                  <div class="t2"><div class="fixedt">Facteur</div></div>
+                  <div class="t3"><div class="fixedt">Attaque</div></div>
+                  <div class="t4"><div class="fixedt">Toucher</div></div>
+                  <div class="t5"><div class="fixedt">Blesser</div></div>
+                  <div class="t6"><div class="fixedt">Dégats</div></div>
+              </div>
+
+              <div id="armeBody">
+
+                <div class="Arme_Dague"></div>
+                <div class="Arme_Baton"></div>
+                <div class="Arme_Baton"></div>
+                <div class="Arme_Baton"></div>
+                <div class="Arme_Baton"></div>
+                <div class="Arme_Baton"></div>
+                <div class="Arme_Baton"></div>
+                <div class="Arme_Baton"></div>
+
+              </div>
+            </div>
+
+          </div>
+
+      </div></div>
+    </div>
+
+    <script src="js/global.js" defer></script>
+    <script src="js/arme.js" defer></script>
+  </body>
+</html>
